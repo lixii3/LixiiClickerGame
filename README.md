@@ -56,7 +56,7 @@ javac com/gioco/poket_click/*.java
 
 2. **Esegui il gioco**:
 ```bash
-java com.gioco.poket_click.PoketClickFrame
+java com.lixii.poket_click.PoketClickFrame
 ```
 
 ### Opzione 3: Creare un JAR Eseguibile
@@ -90,8 +90,8 @@ Poket_Click/
 │   │   ├── GamePanel.java            # Pannello di rendering
 │   │   ├── GameState.java            # Gestione stato (Singleton)
 │   │   ├── GameObject.java           # Classe base per oggetti
-│   │   ├── ClickableObject.java      # Oggetti cliccabili
-│   │   ├── ButtonObject.java         # Pulsanti di upgrade
+│   │   ├── com.lixii.poket_click.ClickableObject.java      # Oggetti cliccabili
+│   │   ├── com.lixii.poket_click.ButtonObject.java         # Pulsanti di upgrade
 │   │   ├── TextObject.java           # Display di testo
 │   │   ├── ScoreDisplay.java         # Display punteggio
 │   │   ├── LovePerSecondDisplay.java # Display love/sec
@@ -115,7 +115,7 @@ Poket_Click/
 
 - **Singleton Pattern**: `GameState` per gestire lo stato globale del gioco
 - **Event-Driven Architecture**: Sistema di eventi per gestire le interazioni
-- **Inheritance**: Gerarchia di oggetti di gioco (`GameObject` → `ClickableObject`, `ButtonObject`, etc.)
+- **Inheritance**: Gerarchia di oggetti di gioco (`GameObject` → `com.lixii.poket_click.ClickableObject`, `com.lixii.poket_click.ButtonObject`, etc.)
 
 ### Classi Principali
 
